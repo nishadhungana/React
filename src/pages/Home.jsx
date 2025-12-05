@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="bg-[#4B2E2B] text-amber-50 py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Brew & Leaf</h1>
+          <h1 className="text-5xl font-bold mb-4">Sips</h1>
           <p className="text-2xl text-amber-100">Coffee & Tea Shop</p>
         </div>
       </div>
@@ -21,7 +21,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-[#4B2E2B] mb-4">Welcome</h2>
           <p className="text-gray-700 text-lg">
             Step into a world where every cup tells a story. 
-            Brew & Leaf is your neighborhood sanctuary for premium coffee, 
+            Sips is your neighborhood sanctuary for premium coffee, 
             artisan tea, and warm conversations.
           </p>
         </div>

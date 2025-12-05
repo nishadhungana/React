@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="bg-[#4B2E2B] text-amber-50 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-          <p>Get in touch with Brew & Leaf</p>
+          <p>Get in touch with Sips</p>
         </div>
       </div>
 
@@ -16,7 +16,7 @@ const Contact = () => {
           {/* Left Column: Contact Info */}
           <div>
             <h2 className="text-2xl font-bold text-[#4B2E2B] mb-6 pb-2 border-b border-[#E8D8D6]">
-              Brew & Leaf
+              Sips
             </h2>
             
             <div className="space-y-6">
@@ -32,7 +32,7 @@ const Contact = () => {
               
               <div>
                 <h3 className="font-bold text-[#4B2E2B] mb-2">Email</h3>
-                <p className="text-gray-700">hello@brewandleaf.com</p>
+                <p className="text-gray-700">hello@sips.com</p>
               </div>
           </div>
           </div>

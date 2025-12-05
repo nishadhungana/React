@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <header className='bg-[#4B2E2B] text-amber-50'>
         <nav className='md:grid grid-cols-4 '>
-         <Link to={'/'}> <h1 className='font-sans text-2xl col-span-1 text-center hover:font-bold cursor-pointer flex items-center justify-center'>Brew & Leaf</h1> </Link>
+         <Link to={'/'}> <h1 className='font-sans text-2xl col-span-1 text-center hover:font-bold cursor-pointer flex items-center justify-center'>Sips</h1> </Link>
           <div className='col-span-2 flex items-center px-5 py-2'>
             <input type="search" className='bg-[#6F5855] border-0 outline-0 px-6 h-full w-full rounded-l-md'/>
             <button className='bg-[#876E6B] h-full px-2 py-1 rounded-r-md hover:bg-[#301D1B] active:bg-amber-950'>

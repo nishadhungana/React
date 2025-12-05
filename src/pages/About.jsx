@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div className="bg-[#4B2E2B] text-amber-50 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold mb-4">About Brew & Leaf</h1>
+          <h1 className="text-3xl font-bold mb-4">About Sips</h1>
           <p>Your neighborhood coffee and tea sanctuary</p>
         </div>
       </div>
@@ -18,7 +18,7 @@ const About = () => {
             <div className="md:w-2/3">
               <h2 className="text-2xl font-bold text-[#4B2E2B] mb-4">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                Brew & Leaf is more than a coffee shop—it's a community hub where 
+              Sips is more than a coffee shop—it's a community hub where 
                 great drinks and good company come together. We're passionate about 
                 serving the perfect cup, whether it's a rich espresso or a delicate tea blend.
               </p>
