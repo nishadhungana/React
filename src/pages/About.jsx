@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cafeImage from '../assets/cafeimage.avif'
+import cafeImage from '../assets/cafeImage.avif'
 
 const About = () => {
   return (
