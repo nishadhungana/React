@@ -1,6 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+
+    //State to store form inputs
+    const [formData, setFormData] = useState({
+      email: "",
+      subject: "",
+      message: "",
+    })
+
+    //Handle input changes
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value});
+    }
+
+    //Handle form submit
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      //Get old users or empty array
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+     
+      //Add new user
+      users.push(formData);
+
+      //Save updated list back to localStorage
+      localStorage.setItem("users",JSON.stringify(users))
+
+      alert("Message Submitted Successfully!");
+
+      //Clear form after submit
+      setFormData({
+        email: "",
+        subject: "",
+        message: "",
+      })
+    }
+
+  
   return (
     <>
       <div className="bg-[#4B2E2B] text-amber-50 py-8">
@@ -43,13 +80,16 @@ const Contact = () => {
               Contact Form
             </h2>
             
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
-                  E-mail *
+                  E-mail
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  onChange={handleChange}
+                  value={formData.email}
                   className="w-full px-4 py-3 border border-[#E8D8D6] rounded-md"
                   placeholder="something@something.com"
                   required
@@ -62,6 +102,9 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-[#E8D8D6] rounded-md"
                   placeholder="Message Subject"
                 />
@@ -73,6 +116,9 @@ const Contact = () => {
                 </label>
                 <textarea
                   rows="6"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-[#E8D8D6] rounded-md"
                   placeholder="Your message here..."
                 />

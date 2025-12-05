@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Menu from './pages/Menu'
 import Layout from './components/layout/Layout'
 import NotFound from './NotFound'
+import Register from './pages/Register'
 
 const MyRoutes = () => {
   return (
@@ -17,7 +18,8 @@ const MyRoutes = () => {
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/menu' element={<Menu/>} />
-         <Route path='*' element={<NotFound/>} />
+        <Route path='/register' element={<Register/>}/>
+        <Route path='*' element={<NotFound/>} />
       </Route>
     </Routes>
     </BrowserRouter>  
