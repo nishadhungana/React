@@ -9,7 +9,7 @@ A simple project made while learning React. It includes basic components and a s
 ## -HTML & CSS
 ## -Tailwind CSS
 ## -Vite(for running the project)
-
+##
 ## 📦 How to Run
 
 1. Clone the repository:
@@ -31,7 +31,7 @@ npm install
 ```
 npm run dev
 ```
-
+##
 Demo:
 https://nishadhungana.github.io/React/
 
