@@ -4,11 +4,11 @@ A simple project made while learning React. It includes basic components and a s
 
 ## 🚀 What I Used
 
--React
--JavaScript
--HTML & CSS
--Tailwind CSS
--Vite(for running the project)
+## -React
+## -JavaScript
+## -HTML & CSS
+## -Tailwind CSS
+## -Vite(for running the project)
 
 ## 📦 How to Run
 
