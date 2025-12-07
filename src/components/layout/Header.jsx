@@ -9,7 +9,7 @@ const Header = () => {
     <header className="bg-[#4B2E2B] text-amber-50 shadow-md">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-
+        
         <div className="flex items-center gap-4">
           <Link to="/">
             <img
@@ -32,6 +32,7 @@ const Header = () => {
           <li><Link to="/contact" className="hover:text-amber-300">Contact</Link></li>
         </ul>
 
+        
         <div className="flex text-2xl gap-4">
           <Link to="/login"><BiLogIn className="hover:text-amber-300" /></Link>
           <Link to="/register"><BsPersonPlus className="hover:text-amber-300" /></Link>
