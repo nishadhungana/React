@@ -1,41 +1,46 @@
-import React from 'react'
-import Logo from '../../assets/Logo.png'
-import { BiLogIn, BiLogOut, BiSearchAlt } from 'react-icons/bi'
-import { BsEyeglasses, BsPersonPlus } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
-
-
+import React from "react";
+import Logo from "../../assets/Logo.png";
+import { BiLogIn } from "react-icons/bi";
+import { BsPersonPlus } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <>
-      <header className='bg-[#4B2E2B] text-amber-50'>
-        <nav className='md:grid grid-cols-4 '>
-          <div className='col-span-2 flex gap-5 items-center'>
-          <Link to={'/'}><img src={Logo} alt="cafeLogo" className='w-13 h-auto rounded-full px-2 py-2' /></Link>
-            <Link to={'/'}> <h1 className='font-bold text-2xl col-span-1 text-center hover:cursor-pointer flex items-center justify-center'>Sips</h1> </Link>
-         </div>
-          <div className='col-span-2 flex justify-evenly items-center'>
-            <Link to={'/login'}>
-            <BiLogIn />
-            </Link>
-            <Link to={'/register'}>
-              <BsPersonPlus />
-            </Link>
-          </div>
-        </nav>
-        <menu className='flex justify-evenly py-2 '>
-          <Link to={'/'}><li className='hover:bg-amber-900 cursor-pointer rounded-lg hover:border-amber-900 hover:border-2 hover:cursor-pointer'>HOME</li></Link>
+    <header className="bg-[#4B2E2B] text-amber-50 shadow-md">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-         <Link to={'/about'}><li className='hover:bg-amber-900 cursor-pointer rounded-lg hover:border-amber-900 hover:border-2 hover:cursor-pointer'>ABOUT</li></Link>
-          
-          <Link to={'/menu'}><li className='hover:bg-amber-900 cursor-pointer rounded-lg hover:border-amber-900 hover:border-2 hover:cursor-pointer'>MENU</li></Link>
+        
+        <div className="flex items-center gap-4">
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="cafeLogo"
+              className="w-14 h-14 rounded-full object-cover"
+            />
+          </Link>
 
-           <Link to={'/contact'}><li className='hover:bg-amber-900 cursor-pointer rounded-lg hover:border-amber-900 hover:border-2 hover:cursor-pointer'>CONTACT</li></Link>
-        </menu>
-      </header>
-    </>
-  )
-}
+          <Link to="/">
+            <h1 className="font-bold text-3xl tracking-wide">Sips</h1>
+          </Link>
+        </div>
 
-export default Header
+      
+        <ul className="hidden md:flex gap-8 text-lg font-medium">
+          <li><Link to="/" className="hover:text-amber-300">Home</Link></li>
+          <li><Link to="/about" className="hover:text-amber-300">About</Link></li>
+          <li><Link to="/menu" className="hover:text-amber-300">Menu</Link></li>
+          <li><Link to="/contact" className="hover:text-amber-300">Contact</Link></li>
+        </ul>
+
+        
+        <div className="flex text-2xl gap-4">
+          <Link to="/login"><BiLogIn className="hover:text-amber-300" /></Link>
+          <Link to="/register"><BsPersonPlus className="hover:text-amber-300" /></Link>
+        </div>
+
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
